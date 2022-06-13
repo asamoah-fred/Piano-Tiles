@@ -26,7 +26,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
     animationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 250));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
     animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed && isPlaying) {
         if (notes[currentNoteIndex].state != NoteState.tapped) {
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         fit: StackFit.passthrough,
         children: <Widget>[
           Image.asset(
-            'assets/jk.jpeg',
+            'assets/df.jpeg',
             fit: BoxFit.cover,
           ),
           Row(
@@ -168,77 +168,77 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   _playNote(Note note) {
     switch (note.line) {
       case 0:
-        player.play('a.mp3');
+        player.play('1.wav');
         return;
       case 1:
-        player.play('b.mp3');
+        player.play('2.wav');
         return;
       case 2:
-        player.play('c.mp3');
+        player.play('3.wav');
         return;
       case 3:
-        player.play('d.mp3');
+        player.play('4.wav');
         return;
       case 4:
-        player.play('e.mp3');
+        player.play('5.wav');
         return;
       case 5:
-        player.play('f.mp3');
+        player.play('6.wav');
         return;
       case 6:
-        player.play('g.mp3');
+        player.play('a.wav');
         return;
       case 7:
-        player.play('h.mp3');
+        player.play('7.wav');
         return;
       case 8:
-        player.play('i.mp3');
+        player.play('f.mp3');
         return;
-      case 9:
-        player.play('j.mp3');
-        return;
-      case 10:
-        player.play('k.mp3');
-        return;
-      case 11:
-        player.play('l.mp3');
-        return;
-      case 12:
-        player.play('m.mp3');
-        return;
-      case 13:
-        player.play('n.mp3');
-        return;
-      case 14:
-        player.play('o.mp3');
-        return;
-      case 15:
-        player.play('p.mp3');
-        return;
-      case 16:
-        player.play('q.mp3');
-        return;
-      case 17:
-        player.play('r.mp3');
-        return;
-      case 18:
-        player.play('s.mp3');
-        return;
-      case 19:
-        player.play('t.mp3');
-        return;
-      case 20:
-        player.play('u.mp3');
-        return;
-      case 21:
-        player.play('v.mp3');
-        return;
-      case 22:
-        player.play('w.mp3');
-        return;
-      case 23:
-        player.play('a.mp3');
-        return;
+      // case 9:
+      //   player.play('j.mp3');
+      //   return;
+      // case 10:
+      //   player.play('k.mp3');
+      //   return;
+      // case 11:
+      //   player.play('l.mp3');
+      //   return;
+      // case 12:
+      //   player.play('m.mp3');
+      //   return;
+      // case 13:
+      //   player.play('n.mp3');
+      //   return;
+      // case 14:
+      //   player.play('o.mp3');
+      //   return;
+      // case 15:
+      //   player.play('p.mp3');
+      //   return;
+      // case 16:
+      //   player.play('q.mp3');
+      //   return;
+      // case 17:
+      //   player.play('r.mp3');
+      //   return;
+      // case 18:
+      //   player.play('s.mp3');
+      //   return;
+      // case 19:
+      //   player.play('t.mp3');
+      //   return;
+      // case 20:
+      //   player.play('u.mp3');
+      //   return;
+      // case 21:
+      //   player.play('v.mp3');
+      //   return;
+      // case 22:
+      //   player.play('w.mp3');
+      //   return;
+      // case 23:
+      //   player.play('a.mp3');
+      //   return;
     }
   }
 }

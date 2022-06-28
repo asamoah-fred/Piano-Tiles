@@ -6,7 +6,12 @@ class Tile extends StatelessWidget {
   final double height;
   final VoidCallback onTap;
 
-  const Tile({Key? key, required this.height, required this.state, required this.onTap}) : super(key: key);
+  const Tile(
+      {Key? key,
+      required this.height,
+      required this.state,
+      required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

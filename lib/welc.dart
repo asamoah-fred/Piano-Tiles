@@ -39,23 +39,23 @@ class Welcome extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pop(
+                  Navigator.push(
                       context, MaterialPageRoute(builder: (context) => Home()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                     color: Colors.blue,
                   ),
-                  child: Text(
-                    'Start',
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                    child: Text(
+                      'Start',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
-              ),
             ],
           ),
         ),

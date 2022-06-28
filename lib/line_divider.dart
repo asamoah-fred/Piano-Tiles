@@ -6,7 +6,7 @@ class LineDivider extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: 1,
-      color: Colors.white,
+      color: Colors.blue,
     );
   }
 }
